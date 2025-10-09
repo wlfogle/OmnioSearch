@@ -374,7 +374,7 @@ impl EntityExtractor {
         
         // Content patterns
         patterns.insert(EntityType::Content, vec![
-            regex::Regex::new(r"contains?\s+[\"']([^\"']+)[\"']")?,
+            regex::Regex::new(r#"contains?\s+["']([^"']+)["']"#)?,
             regex::Regex::new(r"with\s+(.+?)(?:\s+in|\s+from|$)")?,
         ]);
         

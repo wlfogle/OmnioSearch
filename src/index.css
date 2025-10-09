@@ -1,0 +1,10 @@
+/* Minimal stylesheet to satisfy import and basic layout */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}

@@ -32,9 +32,7 @@
     }
   },
   "include": [
-    "src",
-    "*.config.ts",
-    "*.config.js"
+    "src"
   ],
   "references": [
     {
