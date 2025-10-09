@@ -8,15 +8,15 @@ repository = "https://github.com/yourusername/OmnioSearch"
 edition = "2021"
 
 [build-dependencies]
-tauri-build = { version = "2.0", features = [] }
+tauri-build = { version = "2.4", features = [] }
 
 [dependencies]
 # Tauri Core - Native Desktop App Framework
-tauri = { version = "2.0", features = ["fs", "shell", "window", "dialog"] }
-tauri-plugin-fs = "2.0"
-tauri-plugin-shell = "2.0"
-tauri-plugin-dialog = "2.0"
-tauri-plugin-window-state = "2.0"
+tauri = { version = "2.4", features = [] }
+tauri-plugin-fs = "2.4"
+tauri-plugin-shell = "2.3"
+tauri-plugin-dialog = "2.4"
+tauri-plugin-window-state = "2.4"
 
 # Async Runtime
 tokio = { version = "1.0", features = ["full"] }
@@ -31,7 +31,7 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 
 # Database & Indexing
-rusqlite = { version = "0.32", features = ["bundled", "fts5"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
 tantivy = "0.22"
 
 # File System Operations
@@ -41,11 +41,11 @@ notify = { version = "6.1", features = ["macos_fsevent"] }
 globset = "0.4"
 
 # AI & ML
-candle-core = "0.7"
-candle-nn = "0.7"
-candle-transformers = "0.7"
-tokenizers = "0.20"
-hf-hub = "0.3"
+candle-core = "0.9"
+candle-nn = "0.9"
+candle-transformers = "0.9"
+tokenizers = "0.22"
+hf-hub = "0.4"
 
 # Text Processing
 regex = "1.10"
